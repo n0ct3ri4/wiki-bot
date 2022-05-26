@@ -1,0 +1,40 @@
+{
+  "name": "wikibot",
+  "version": "1.0.0",
+  "description": "Search things on Wikipedia via Discord.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0ct3ri4/WikiBot.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "nodejs",
+    "wiki",
+    "wikipedia",
+    "bot",
+    "discord",
+    "discordjs",
+    "search",
+    "internet"
+  ],
+  "author": "n0ct3ri4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n0ct3ri4/WikiBot/issues"
+  },
+  "homepage": "https://github.com/n0ct3ri4/WikiBot#readme",
+  "dependencies": {
+    "wikipedia": "^1.1.1"
+  },
+  "devDependencies": {
+    "discord.js": "12.5.3",
+    "fs": "*",
+    "os": "^0.1.1",
+    "colors": "^1.4.0"
+  }
+}
