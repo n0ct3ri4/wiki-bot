@@ -4,15 +4,13 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const os = require("os");
 var prefix = "w!";
+var TOKEN = "";
 
 const client = new Discord.Client();
 
 client.on("ready", () => {
-  client.user.setActivity({
-    name: `${prefix}help`,
-    type: "STREAMING",
-    url: "https://twitch.tv/n0ct3ri4",
-  });
+  // set client activity
+  client.user.setActivity("w!help", { type: "PLAYING" });
   console.log(colors.cyan(client.user.tag), "is now ready!");
   console.log(`↳ ${colors.yellow("Memory")} > ${os.totalmem() / 1024 / 1024}`);
   console.log(`↳ ${colors.yellow("Processor")} > ${os.cpus()[0].model}`);
@@ -142,4 +140,4 @@ client.on("message", (msg) => {
   }
 });
 
-client.login("TOKEN");
+client.login(TOKEN);
